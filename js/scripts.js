@@ -11,18 +11,18 @@ var findVowel = function(message) {
   };
 };
 
-// var findConsonant = function(message) {
-//   for (var i=0; i < message.length; i++) {
-//
-//     for (var j=0; j < vowel.length; j++) {
-//       if (message.charAt([i]) !== vowel[j]) {
-//       }
-//       else {
-//         return message.slice([i]) + message.slice(0,[(i)]) + addAy;
-//       };
-//     };
-//   };
-// };
+var findConsonant = function(message) {
+  for (var i=0; i < message.length; i++) {
+
+    for (var j=0; j < vowel.length; j++) {
+      if (message.charAt([i]) !== vowel[j]) {
+      }
+      else {
+        return message.slice([i]) + message.slice(0,[(i)]) + addAy;
+      };
+    };
+  };
+};
 
 
 

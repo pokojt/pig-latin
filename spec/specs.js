@@ -4,8 +4,8 @@ describe ('findVowel', function () {
   });
 });
 
-// describe ('findConsonant', function () {
-//   it("moves all consonants before the first vowel to end of word and adds 'ay'", function() {
-//     expect(findConsonant("coffee")).to.equal("offeecay");
-//   });
-// });
+describe ('findConsonant', function () {
+  it("moves all consonants before the first vowel to end of word and adds 'ay'", function() {
+    expect(findConsonant("coffee")).to.equal("offeecay");
+  });
+});
