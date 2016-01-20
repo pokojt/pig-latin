@@ -4,15 +4,10 @@ describe ('pigLatin', function () {
   });
 
   it("moves first letter to end of word if it starts with one consonant and adds 'ay'", function() {
-    expect(pigLatin("coffee")).to.equal("offeecay");
+    expect(pigLatin("carousel")).to.equal("arouselcay");
   });
 
-//   it("moves first two letters to end of word if it starts with two consonant and adds 'ay'", function() {
-//     expect(pigLatin("pretty")).to.equal("ettypray");
-//   });
-// });
-//
-//
-//
-//
-//
+  it("moves first two letters to end of word if it starts with two consonant and adds 'ay'", function() {
+    expect(pigLatin("pretty")).to.equal("ettypray");
+  });
+});
