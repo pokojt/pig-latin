@@ -9,3 +9,9 @@ describe ('findConsonant', function () {
     expect(findConsonant("coffee")).to.equal("offeecay");
   });
 });
+
+describe ('findQu', function () {
+  it("moves 'u' to end of the word if first consonants include 'qu' and adds 'ay' ", function () {
+    expect(findQu("quit")).to.equal("itquay");
+  });
+});

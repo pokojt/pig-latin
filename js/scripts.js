@@ -1,6 +1,8 @@
 
 var vowel = ['a', 'e', 'i', 'o', 'u'];
 var addAy = "ay";
+var addQu = "qu";
+
 
 
 var findVowel = function(message) {
@@ -15,7 +17,7 @@ var findConsonant = function(message) {
   for (var i=0; i < message.length; i++) {
 
     for (var j=0; j < vowel.length; j++) {
-      if (message.charAt([i]) !== vowel[j]) {
+      if (message.charAt([i]) !== vowel[j]) { //once you reach the first vowel in the string, the else statment beings
       }
       else {
         return message.slice([i]) + message.slice(0,[(i)]) + addAy;
@@ -24,6 +26,39 @@ var findConsonant = function(message) {
   };
 };
 
+var findQu = function(message) {
+  for (var i=0; i < message.length; i++) {
+    if (message.indexOf("q") != -1);
+
+      return message.slice([i]) + message.slice(0,[(i)]) + addQu + addAy;
+
+  };
+};
+
+
+// var pigLatin = function(message) {
+//   if (findVowel(message)) {
+//     return message + addAy;
+//   }
+//   else if (findConsonant(message)) {
+//     return message.slice([i]) + message.slice(0,[(i)]) + addAy;
+//   }
+//
+//
+// };
+
+
+
+
+$(document).ready(function() {
+  $("form#pig-latin").submit(function(event) {
+    var result = $("input#message").val();
+
+
+    $("#result").show();
+    event.preventDefresult
+  });
+});
 
 
 //EVERYTHING BELOW THIS IS CODE FROM EARLIER THAT WE COULDN'T
@@ -75,11 +110,3 @@ var findConsonant = function(message) {
 //
 //
 //
-// $(document).ready(function() {
-//   $("form").submit(function(event) {
-//
-//
-//     $("#result").show();
-//     event.preventDefault();
-//   });
-// });
